@@ -2,10 +2,12 @@ const express = require('express'); /*Importa o framework Express, que facilita 
 const app = express(); /*Cria uma instância do servidor Express, que será usada para definir as rotas */
 
 app.use(express.json()); /* Falo para o express entender dados em JSON que é enviado na requisição POST. */
+
 app.use((req, res, next) => {
     console.log(`[${new Date().toISOString()}] Requisição recebida: ${req.method} ${req.url}`);
     next();
 });
+
 const books = [ /* Uma lista de livros dentro de um array de objt com nome de livros e autor, basicamente simula um banco */
   { titulo: "O Código Da Vinci", autor: "Dan Brown" },
   { titulo: "Garota Exemplar", autor: "Gillian Flynn" },

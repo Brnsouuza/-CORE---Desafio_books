@@ -21,7 +21,6 @@ Este projeto é um backend simples construído com **Node.js** e **Express**, co
 
 ### 1. Clonar o repositório
 
-```bash
 git clone https://github.com/Brnsouuza/-CORE---Desafio_books
 cd api-books
 
